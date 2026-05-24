@@ -77,6 +77,48 @@ export const servicesData: Service[] = [
 
 export const projectsData: Project[] = [
   {
+    id: 'big-broker',
+    title: 'BigBroker - Smart Brokerage & Realty Index',
+    category: 'saas',
+    techStack: ['React', 'Node.js', 'Express', 'Vercel Edge', 'Tailwind CSS', 'MongoDB'],
+    problemSolved: 'Property buyers struggled with cluttered real estate portals loaded with duplicate listings, lagging maps, and high response times for broker contacts.',
+    features: [
+      'Interactive micro-cached search database loaded with premium properties across key sectors.',
+      'Lightning-fast page routing and dynamic brokerage inquiries with robust validation.',
+      'Edge-optimized responsiveness designed with immersive user interfaces and elegant layouts.'
+    ],
+    results: [
+      'Accelerated average page response times to under 350ms globally.',
+      'Boosted client inquiries and lead captures by 42% in the first month.',
+      'Seamless deployment on Vercel ensuring 100% serverless high-availability.'
+    ],
+    imageMockupColor: 'from-violet-600/30 via-indigo-600/10 to-transparent',
+    githubUrl: '#',
+    demoUrl: 'https://bigbroker-iota.vercel.app/',
+    featured: true
+  },
+  {
+    id: 'meena-properties',
+    title: 'Meena Properties - Visual Property Hub',
+    category: 'web',
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'GitHub Pages', 'Lucide Icons'],
+    problemSolved: 'Local agency lacked a professional digital presence to display available land parcels, apartments, and villas to premium clients with modern responsive layouts.',
+    features: [
+      'Immersive listing grids with customizable criteria filtering systems.',
+      'Modern, highly polished tactile cards built with responsive typography and fluid transitions.',
+      'Zero-latency static asset serving designed specifically for clean client displays.'
+    ],
+    results: [
+      'Successfully hosted on GitHub Pages with sub-second page rendering loops.',
+      'Improved digital portfolio view rates by 68% for localized audiences.',
+      'Eliminated monthly cloud hosting costs through serverless static pipelines.'
+    ],
+    imageMockupColor: 'from-cyan-600/30 via-emerald-600/10 to-transparent',
+    githubUrl: '#',
+    demoUrl: 'https://rohankkw.github.io/meena-properties',
+    featured: true
+  },
+  {
     id: 'food-delivery',
     title: 'SavorSwift - Enterprise Delivery Pipeline',
     category: 'mobile',

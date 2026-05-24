@@ -18,6 +18,70 @@ export const Portfolio: React.FC = () => {
   // Interactive Live Product Simulator render core
   const renderProductSimulator = (projectId: string) => {
     switch (projectId) {
+      case 'big-broker':
+        return (
+          <div className="w-full h-44 bg-[#07070a] border border-white/5 rounded-xl p-3.5 flex flex-col justify-between overflow-hidden relative font-mono text-[10px] text-zinc-400">
+            {/* Simulation Header */}
+            <div className="flex justify-between items-center mb-1.5 pb-1.5 border-b border-white/5">
+              <span className="text-white font-semibold flex items-center space-x-1">
+                <span className="w-2 h-2 rounded-full bg-violet-500 animate-ping inline-block" />
+                <span>BigBroker Engine v2.4</span>
+              </span>
+              <span className="text-[9px] text-zinc-500">LIVE DATA RECEPTOR</span>
+            </div>
+            {/* Visual Micro Stats UI */}
+            <div className="flex-1 space-y-2 py-1">
+              <div className="grid grid-cols-2 gap-2">
+                <div className="px-2 py-1 bg-zinc-950 rounded border border-white/5">
+                  <span className="text-zinc-500 text-[8px] block">REALTY INQUIRIES</span>
+                  <span className="text-violet-400 font-bold text-[11px]">+42% This Month</span>
+                </div>
+                <div className="px-2 py-1 bg-zinc-950 rounded border border-white/5">
+                  <span className="text-zinc-500 text-[8px] block">SERVER RESPONSIVENESS</span>
+                  <span className="text-emerald-400 font-bold text-[11px]">350ms (AVG)</span>
+                </div>
+              </div>
+              <div className="p-1 px-2 rounded bg-zinc-950 border border-white/5 flex items-center justify-between text-[9px]">
+                <span className="text-zinc-400 font-sans">Active Land Registry Pipeline</span>
+                <span className="text-emerald-400 animate-pulse font-normal">● STABLE</span>
+              </div>
+            </div>
+            <div className="flex justify-between text-[9px] pt-1.5 border-t border-white/5 font-sans">
+              <span>Database Sync: <strong className="text-white">100% Secure</strong></span>
+              <span className="text-violet-400">Vercel Edge Ready</span>
+            </div>
+          </div>
+        );
+      case 'meena-properties':
+        return (
+          <div className="w-full h-44 bg-[#07070a] border border-white/5 rounded-xl p-3.5 flex flex-col justify-between overflow-hidden relative text-[10px] text-zinc-400 font-sans">
+            <div className="flex justify-between items-center mb-1 pb-1.5 border-b border-white/5">
+              <span className="text-white font-semibold flex items-center space-x-1">
+                <LucideIcon name="Globe" size={12} className="text-cyan-400" />
+                <span>Meena Properties Showroom</span>
+              </span>
+              <span className="bg-cyan-500/10 border border-cyan-500/15 text-cyan-300 rounded px-1.5 text-[8px]">GITHUB PAGES</span>
+            </div>
+            {/* List Selection filter simulation */}
+            <div className="flex-1 py-1.5 space-y-2 font-mono">
+              <div className="text-[9.5px] text-zinc-400 flex justify-between">
+                <span>ACTIVE CATEGORIES:</span>
+                <span className="text-zinc-500">[VILLAS, APARTMENTS]</span>
+              </div>
+              <div className="p-2 rounded bg-zinc-950 border border-white/5 relative group cursor-pointer hover:border-cyan-500/20 transition-all text-left">
+                <div className="flex justify-between items-baseline mb-0.5">
+                  <span className="font-bold text-white text-[10px]">Premium Luxury Villa #12</span>
+                  <span className="text-cyan-400 font-sans font-medium text-[8.5px]">Available</span>
+                </div>
+                <p className="text-[8.5px] text-zinc-500 leading-none">Responsive Image Grid &amp; Map Location Loaded</p>
+              </div>
+            </div>
+            <div className="flex justify-between items-center text-[9px] font-mono text-zinc-500">
+              <span>Asset Speed: <strong>Sub-1s</strong></span>
+              <span className="text-cyan-400 text-[8px]">● STATIC SERV FAST</span>
+            </div>
+          </div>
+        );
       case 'food-delivery':
         return (
           <div className="w-full h-44 bg-[#07070a] border border-white/5 rounded-xl p-3.5 flex flex-col justify-between overflow-hidden relative font-mono text-[10px] text-zinc-400">
